@@ -1,0 +1,95 @@
+
+
+html {
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  background: #45badd;
+  text-align: center;
+
+}
+.container
+{
+  height: 90vh;
+  /* width: 100vw; */
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   background: url('./robot.gif');
+   background-size: contain;
+   background-position: left center;
+   background-repeat: no-repeat;
+
+}
+
+button
+{
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  color: wheat;
+  background: #ff3482;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 8%;
+
+
+}
+button:hover
+{
+  filter: brightness(95%);
+
+}
+button:active
+{
+  transform: translateY(5px)
+}
+button:disabled
+{
+  cursor: default;
+  filter: brightness(30%);
+}
+.joke
+{
+ 
+  width: 20%;
+  padding: 10px;
+  margin-left: 10%;
+}
+.header
+{
+  background-color: black;
+  position: fixed;
+  top: 0;
+  color: wheat;
+  width: 100%;
+}
+
+@media screen and (max-width:1000px)
+{
+  .container
+  {
+    background-size: cover;
+    background-position: center center;
+  }
+  button
+  {
+  box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+
+  }
+  .joke
+  {
+    
+    background-color: whitesmoke;
+    width: 80%;
+   
+  }
+}
